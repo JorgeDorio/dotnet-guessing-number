@@ -35,11 +35,13 @@ public class GuessNumber
 
 	public void RandomNumber()
 	{
-		throw new NotImplementedException();
+		randomValue = random.GetInt(-100,100);
 	}
 
 	public void AnalyzePlay()
 	{
-		throw new NotImplementedException();
+		if(userValue > randomValue) Console.WriteLine("Tente um número MENOR");
+		else if(userValue < randomValue) Console.WriteLine("Tente um número MAIOR");
+		else Console.WriteLine("ACERTOU!");
 	}
 }

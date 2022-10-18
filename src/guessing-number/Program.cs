@@ -6,12 +6,12 @@ public class Program
 	{
 		GuessNumber Game = new();
 		Game.Greet();        
+		Game.RandomNumber();
 		Game.ChooseNumber();
-		/* Game.RandomNumber(); */
-		/* do */
-		/* { */
-		/*     Game.ChooseNumber(); */
-		/*     Game.AnalyzePlay(); */
-		/* }while(Game.randomValue != Game.userValue);          */
+		do
+		{
+			Game.ChooseNumber();
+			Game.AnalyzePlay();
+		}while(Game.randomValue != Game.userValue);         
 	}   
 }
